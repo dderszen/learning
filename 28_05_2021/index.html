@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>CurrencyExchangeRate</title>
+</head>
+<body>
+    <nav>
+        <p id="title">PLNExchange</p>
+    </nav>
+    <section class="container">
+        <div class="form-container">
+            <form class="exchange-form">
+                <label for="amount">Amount: </label><input type="number" id="amount" placeholder="Amount in PLN"/>
+                <label for="currency">To: </label><select id="currency">
+                </select>
+            </form>
+            <button id="exchange">Exchange!</button>
+        </div>
+        <div class="exchanged-amount-container">
+            <h1 id="exchanged-amount"></h1>
+            <h2 id="currency-tag"></h2>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
