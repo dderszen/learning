@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.7;
+}
+.slider-container{
+    height: 100vh;
+    display: inline-flex;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
+
+.slide{
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    user-select:none; /*!!!!!! MAKES IT IMPOSSIBLE TO SELECT !!!!!!*/
+}
+.slide img {
+    max-width: 100%;
+    max-height: 60%;
+    margin-bottom: 0.5rem;
+}
+.macbook {
+    width: 30%;
+    margin: 40px;
+}
+.lenovo {
+    width: 30%;
+    margin: 40px;
+}
+.slide h2 {
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+.slide h4{
+    font-size: 2rem;
+}
+.btn {
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: #fff;
+    text-decoration:none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+.grabbing .slide img{
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
