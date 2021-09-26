@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Mukta, sans-serif;
+}
+
+section {
+  min-width: 500px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6e6e6;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+section h1 {
+  color: #fa2a2a;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+section .app {
+  min-width: 400px;
+  width: 80%;
+  height: 80px;
+  border-radius: 25px;
+  background-color: #a52828;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .app input[type="text"] {
+  height: 60px;
+  width: 50%;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+section .app input[type="text"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2pt #fa2a2a;
+          box-shadow: 0 0 0 2pt #fa2a2a;
+}
+
+section .app .menu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section .app .menu .plus {
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fa2a2a;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+section .app .menu .plus:hover {
+  cursor: pointer;
+  -webkit-animation: pulse infinite 1s ease-in-out;
+          animation: pulse infinite 1s ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0 2px white;
+            box-shadow: 0px 0px 0 2px white;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0 2px white;
+            box-shadow: 0px 0px 0 2px white;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+section .app .menu .plus i {
+  color: #ebebeb;
+  font-size: 2em;
+}
+
+section .todo-list {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .todo-element {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
